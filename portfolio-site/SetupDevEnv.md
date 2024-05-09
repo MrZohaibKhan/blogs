@@ -13,3 +13,14 @@ nvm use v20.13.0
 npm install -g pnpm
 npx create-next-app@latest
 ```
+# First Error
+Parsing error : Cannot find module 'next/babel'
+
+Solved by adding 
+```
+{
+  "extends": ["next/babel","next/core-web-vitals"]
+}
+```
+in .eslintrc.json file
+[Reference](https://stackoverflow.com/questions/68163385/parsing-error-cannot-find-module-next-babel)
